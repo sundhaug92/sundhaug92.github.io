@@ -12,11 +12,11 @@ categories:
 
 ## Timeline
 
-```
-<pre class="wp-block-preformatted">Found at or before May 2nd, 2017
+{% highlight text %}
+Found at or before May 2nd, 2017
 Reported May 2nd~3rd, 2017
 Fixed in 10.0.15063.XXX 2017-XX-XX
-```
+{% endhighlight %}
 
 ## Demo
 
@@ -48,8 +48,7 @@ When you do this, and have a client send data early, you end up with a bugcheck.
 
 The below exploit is very simple, it’s just a bash-program (with some flare of course), that writes a python client and a python server to disk, then runs both of them for a few seconds (assuming that if the bug is triggered, it’s relatively fast). If the program completes running for more than 1 minute, it’s assumed that the bugcheck has been fixed.
 
-<div class="wp-block-syntaxhighlighter-code ">```
-<pre class="brush: bash; title: ; notranslate" title="">
+{% highlight bash %}
 #!/bin/bash
 function typewriter
 {
@@ -129,6 +128,7 @@ typewriter "^ We're still here'";echo
 echo
 typewriter "killing child-processes"
 kill -9 $server_pid $client_pid
-```
 
-</div>The exploit is named after Babesia, which is a single-cell parasite.
+{% endhighlight %}
+
+The exploit is named after Babesia, which is a single-cell parasite.

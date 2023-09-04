@@ -15,8 +15,7 @@ Time of check to time of use is a class of vulnerabilities that depend on it tak
 
 Basic user-mode pseudo-code:
 
-<div class="wp-block-syntaxhighlighter-code ">```
-<pre class="brush: cpp; title: ; notranslate" title="">
+{% highlight c %}
 void be_vulnerable() {
     void* res=load_resource("some-resource");
     if(!validate_resource(res)) {
@@ -25,9 +24,9 @@ void be_vulnerable() {
     }
     use_resource(res);
 }
-```
+{% endhighlight %}
 
-</div>1. validate\_resource is going to start off with basic validation before it goes off to more complex validation
+1. validate\_resource is going to start off with basic validation before it goes off to more complex validation
 2. validate\_resource is going to take some amount of time
 3. There’s some other, in-process, not pictured, thread that can access res while be\_vulnerable is running
 
@@ -35,8 +34,7 @@ If the other thread manages to access res while validate\_resource is running, t
 
 One way to avoid this is to use [mprotect (2)](http://man7.org/linux/man-pages/man2/mprotect.2.html), like this:
 
-<div class="wp-block-syntaxhighlighter-code ">```
-<pre class="brush: cpp; title: ; notranslate" title="">
+{% highlight c linenos %}
 void be_vulnerable() {
     void* res=load_resource("some-resource");
     mprotect(res, len, PROT_READ); // len not defined, to simplify example
@@ -46,9 +44,9 @@ void be_vulnerable() {
     }
     use_resource(res);
 }
-```
+{% endhighlight %}
 
-</div>This way, you can ensure that after line 3, you’re looking at a definitive truth. Now, there are some limitations to this, sharing res with other processes makes things a bit more difficult (you have to use O\_RDONLY when calling [shm\_open(3)](https://linux.die.net/man/3/shm_open)) or have res be placed in shared memory, copying the data doesn’t copy the protection. Fun fact: If you want to work on private data, you can create a code-section that directly accesses the data, then map that code-section PROT\_EXEC (without PROT\_READ), this is used in Safari on iOS.
+This way, you can ensure that after line 3, you’re looking at a definitive truth. Now, there are some limitations to this, sharing res with other processes makes things a bit more difficult (you have to use O\_RDONLY when calling [shm\_open(3)](https://linux.die.net/man/3/shm_open)) or have res be placed in shared memory, copying the data doesn’t copy the protection. Fun fact: If you want to work on private data, you can create a code-section that directly accesses the data, then map that code-section PROT\_EXEC (without PROT\_READ), this is used in Safari on iOS.
 
 Yeah Martin, that’s fine and dandy, but my problem is with code running on devices, not on the main CPU (yes, this has actually been a problem on some consoles).
 
