@@ -1,6 +1,6 @@
 ---
 id: 10
-title: 'Mitral valve repair &#8211; a marvel of modern medicine'
+title: 'Mitral valve repair – a marvel of modern medicine'
 date: '2013-08-05T07:55:48+02:00'
 author: Martin
 layout: post

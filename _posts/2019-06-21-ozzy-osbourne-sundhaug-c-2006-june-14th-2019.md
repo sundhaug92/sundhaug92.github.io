@@ -1,6 +1,6 @@
 ---
 id: 355
-title: 'Ozzy &#8220;Osbourne&#8221; Sundhaug (c. 2006 &#8211; June 14th, 2019)'
+title: 'Ozzy “Osbourne” Sundhaug (c. 2006 – June 14th, 2019)'
 date: '2019-06-21T02:25:41+02:00'
 author: Martin
 layout: post

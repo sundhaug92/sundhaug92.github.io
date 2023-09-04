@@ -1,6 +1,6 @@
 ---
 id: 438
-title: 'Babesia &#8211; Windows 10 1703 DoS in lxcore'
+title: 'Babesia – Windows 10 1703 DoS in lxcore'
 date: '2020-01-10T20:04:36+01:00'
 author: Martin
 layout: post

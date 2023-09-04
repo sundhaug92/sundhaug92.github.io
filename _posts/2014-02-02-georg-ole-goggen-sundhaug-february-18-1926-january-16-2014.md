@@ -1,6 +1,6 @@
 ---
 id: 61
-title: 'Georg Ole &#8220;Goggen&#8221; Sundhaug (February 18, 1926 &#8211; January 16, 2014)'
+title: 'Georg Ole “Goggen” Sundhaug (February 18, 1926 – January 16, 2014)'
 date: '2014-02-02T20:04:31+01:00'
 author: Martin
 layout: post
