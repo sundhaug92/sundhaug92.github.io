@@ -12,4 +12,4 @@ categories:
     - Personal
 ---
 
-{% youtube HKh6XxYbbIc %}
+<iframe width="#{@width}" height="#{@height}" src="https://www.youtube.com/embed/HKh6XxYbbIc"></iframe><br /> <a href="https://www.youtube.com/watch?v=HKh6XxYbbIc">Video</a>

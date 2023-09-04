@@ -15,4 +15,4 @@ categories:
 
 SIM-cards, the small insert-and-forget chip installed in every GSM-base mobilephone have recently been the target of a project to test the security therein. Among other things one of the discovered was cryptographic functions belonging decades ago.
 
-{% youtube wBzb-Zx4rsI %}
+<iframe width="#{@width}" height="#{@height}" src="https://www.youtube.com/embed/wBzb-Zx4rsI"></iframe><br /> <a href="https://www.youtube.com/watch?v=wBzb-Zx4rsI">Video</a>

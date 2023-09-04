@@ -11,4 +11,4 @@ categories:
     - Personal
 ---
 
-{% youtube 4rrXR6n0RTY %}
+<iframe width="#{@width}" height="#{@height}" src="https://www.youtube.com/embed/4rrXR6n0RTY"></iframe><br /> <a href="https://www.youtube.com/watch?v=4rrXR6n0RTY">Video</a>

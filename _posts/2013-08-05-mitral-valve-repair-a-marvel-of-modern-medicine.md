@@ -15,7 +15,7 @@ tags:
     - youtube
 ---
 
-{% youtube 1duI_ycUORk %}
+<iframe width="#{@width}" height="#{@height}" src="https://www.youtube.com/embed/1duI_ycUORk"></iframe><br /> <a href="https://www.youtube.com/watch?v=1duI_ycUORk">Video</a>
 
 Imagine that there was a dual-pump system with a number of check-valves necessary for you to live. Furthermore, imagine that one of the valves was leaking causing exhaustion, coughing blood and possibly death. This is what medical professionals refer to as Mitral valve regurgiation, or leaking of the mitral valve. The mitral valve is the valve in your heart that, when functioning properly, ensures that oxygenated blood from the lungs is not pumped back into the lungs but to the rest of the body (including the heart itself).
 
