@@ -20,7 +20,8 @@ Fixed in 10.0.15063.XXX 2017-XX-XX
 
 ## Demo
 
-<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="296" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" src="https://www.youtube.com/embed/i99ut6KgdvQ?version=3&rel=1&showsearch=0&showinfo=1&iv_load_policy=1&fs=1&hl=en-US&autohide=2&wmode=transparent" style="border:0;" width="525"></iframe></span></div></figure>## Story
+{% youtube i99ut6KgdvQ %}
+## Story
 
 Years ago, while trying to fuzz the GDB-server-implementation in the Nintendo® Game Boy Advance-emulator VBA-M (Visual-Boy Advance), I came upon a few issues. For one, fuzzing on Windows 10, my primary operating-system, was not as easy as I’d like it to. Now this was a fairly easy problem to solve, as Microsoft had just a few months before released their first stable release of the Windows Subsystem for Linux (IIRC, still called Bash on Windows at the time). The second issue, was that I couldn’t find an appropriate protocol-fuzzer for GDB. This required a bit more work, requiring me to write one myself in python. GDB treats a TCP-connection as a serial-port, meaning it reuses the GDB serial-protocol. The GDB serial-protocol is reasonably well documented, so this didn’t pose too many additional hours. Then, there was the big issue: My computer crashing.
 

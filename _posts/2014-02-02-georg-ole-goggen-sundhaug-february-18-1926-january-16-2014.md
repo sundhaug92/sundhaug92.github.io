@@ -12,4 +12,4 @@ categories:
     - Personal
 ---
 
-<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="296" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation" src="https://www.youtube.com/embed/HKh6XxYbbIc?version=3&rel=1&showsearch=0&showinfo=1&iv_load_policy=1&fs=1&hl=en-US&autohide=2&wmode=transparent" style="border:0;" width="525"></iframe></span>
+{% youtube HKh6XxYbbIc %}
