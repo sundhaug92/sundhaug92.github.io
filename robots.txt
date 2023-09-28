@@ -1,0 +1,7 @@
+User-agent: ChatGPT-User
+Disallow: /
+
+User-Agent: CCBot
+Disallow: /
+
+Sitemap: https://sundhaug.com/sitemap.xml
