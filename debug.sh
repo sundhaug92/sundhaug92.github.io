@@ -8,4 +8,4 @@
 # See https://jekyllrb.com/docs/installation/
 # See https://jekyllrb.com/docs/
 
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve --watch --force_polling --livereload
