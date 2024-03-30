@@ -4,3 +4,4 @@
 
 layout: home
 ---
+<a rel="me" href="https://mastodon.social/@sundhaug92">Mastodon</a>
